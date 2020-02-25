@@ -1,0 +1,43 @@
+{
+  "name": "meditation",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "build:cleanup-old": "rm -rf android/app/build",
+    "build:release": "npm run build:cleanup-old && cd android && ./gradlew bundleRelease",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-native": "^0.61.4",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-native-iap": "^4.2.2",
+    "react-native-slider": "^0.11.0",
+    "react-native-sound": "^0.11.0",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.9.1",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "prettier": "1.18.2",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
